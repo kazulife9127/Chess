@@ -128,7 +128,15 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: -2090602904370046433, guid: d77c00517b0a5bf498805f142d70237c, type: 2}
+  - {fileID: 1738322821262776506, guid: e732ce5c29d539a41b9bbafd5d1ea9f2, type: 2}
+  - {fileID: -9035391176086205038, guid: 6ae1ebc2b6616c34d840d0b536caa235, type: 2}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -604,11 +612,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Chess
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 005b5809919fd901
   metroApplicationDescription: Template_3D
   wsaImages: {}
   metroTileShortName: OnlineChess

@@ -9,6 +9,8 @@ public class ChessGameController : MonoBehaviour
     [SerializeField] private BoardLayout startingBoardLayout;
     [SerializeField] private Board board;
 
+    public GameObject boardAndUnit;
+
     private PieceCreator pieceCreator;
 
     // Start is called before the first frame update
@@ -52,5 +54,9 @@ public class ChessGameController : MonoBehaviour
 
         Material teamMaterial = pieceCreator.GetTeamMaterial(team);
         newPiece.SetMaterial(teamMaterial);
+
+        // 親オブジェクトに入れる
+        newPiece.transform.parent = boardAndUnit.gameObject.transform;
     }
+
 }
