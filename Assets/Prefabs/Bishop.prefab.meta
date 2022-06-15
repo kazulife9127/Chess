@@ -1,15 +1,7 @@
 fileFormatVersion: 2
-guid: fd6f7b3339aac49c8bc797a21713cd88
-labels:
-- chess
-- board
-- boardgame
-- game
-- chessboard
-- Bishop
-timeCreated: 1462534798
-licenseType: Store
-NativeFormatImporter:
+guid: 3eb86ea646bdc62ef87d5aea53cc06ae
+PrefabImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
