@@ -1,14 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Scriptable Objects/Board/Layout")]
+public enum TeamColor
+{
+    Black, White
+}
 
+public enum PieceType
+{
+    Pawn, Bishop, Knight, Rook, Queen, King
+}
+
+[CreateAssetMenu(menuName = "Scriptable Objects/Board/Layout")]
 public class BoardLayout : ScriptableObject
 {
-    [System.Serializable]
-    
-    // ボード上の設定用の変数
+    [Serializable]
     private class BoardSquareSetup
     {
         public Vector2Int position;
@@ -23,36 +32,18 @@ public class BoardLayout : ScriptableObject
         return boardSquares.Length;
     }
 
-    // ボードと配置（場所）のデバッグ
+
     public Vector2Int GetSquareCoordsAtIndex(int index)
     {
-        if(boardSquares.Length <= index)
-        {
-            Debug.LogError("Index of piece is out of range");
-            return new Vector2Int(-1, -1);
-        }
         return new Vector2Int(boardSquares[index].position.x - 1, boardSquares[index].position.y - 1);
     }
-
-    // ボードと駒タイプのデバッグ
     public string GetSquarePieceNameAtIndex(int index)
     {
-        if(boardSquares.Length <= index)
-        {
-            Debug.Log("Index of piece is out of range");
-            return "";
-        }
         return boardSquares[index].pieceType.ToString();
     }
-
-    // ボードと色のデバッグ
     public TeamColor GetSquareTeamColorAtIndex(int index)
     {
-        if(boardSquares.Length <= index)
-        {
-            Debug.Log("Index of piece is out of range");
-            return TeamColor.Black;
-        }
         return boardSquares[index].teamColor;
     }
+
 }

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 777949680244818063}
   - component: {fileID: 3589181610054028621}
   - component: {fileID: 7710458048999313156}
-  - component: {fileID: 5092392832601311257}
   - component: {fileID: 7606033359512183909}
+  - component: {fileID: 2811868861274836498}
   m_Layer: 0
   m_Name: King
   m_TagString: Untagged
@@ -89,18 +89,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54de9eb9ce5cb48b5a28c9ae68b4368c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5092392832601311257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1337016230325609427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a12b9c93b1fac4015800aba5d50f5db1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7606033359512183909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +101,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8f46537b4173419bb0eb0ba32451f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialSetter: {fileID: 0}
   avaliableMoves: []
+--- !u!114 &2811868861274836498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337016230325609427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ec2de49249c454ba2458df12ce3a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &1250533473154321479
 CapsuleCollider:
   m_ObjectHideFlags: 0
