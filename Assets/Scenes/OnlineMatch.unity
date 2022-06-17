@@ -354,7 +354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.37541556, y: 0, z: 0, w: 0.92685664}
-  m_LocalPosition: {x: 0, y: 0.37, z: -0.382}
+  m_LocalPosition: {x: 0, y: 0.434, z: -0.375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -476,12 +476,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piecesPrefabs:
-  - {fileID: 2204627280617857194, guid: 3eb86ea646bdc62ef87d5aea53cc06ae, type: 3}
-  - {fileID: 1337016230325609427, guid: 89708febf5cf656489fc2a6e01bf8fdf, type: 3}
-  - {fileID: 394814054184566429, guid: f4496cf675832395f896b2d601be6f6d, type: 3}
-  - {fileID: 4033392455785804068, guid: 7b89b155d7a18a01a9a4f529cd6260dd, type: 3}
-  - {fileID: 7182787285499975166, guid: 5e2ac001cebeb349c848a01f96cd6ee7, type: 3}
-  - {fileID: 5709170103901785490, guid: 79ddb178bba7cbc529b9e5f5354b761e, type: 3}
+  - {fileID: 8584943991595930061, guid: 79ddb178bba7cbc529b9e5f5354b761e, type: 3}
+  - {fileID: 7040512698745301974, guid: 5e2ac001cebeb349c848a01f96cd6ee7, type: 3}
+  - {fileID: 608622175950840411, guid: 7b89b155d7a18a01a9a4f529cd6260dd, type: 3}
+  - {fileID: 1460818207074757442, guid: f4496cf675832395f896b2d601be6f6d, type: 3}
+  - {fileID: 7054342401035948693, guid: 89708febf5cf656489fc2a6e01bf8fdf, type: 3}
+  - {fileID: 8977372839613691213, guid: 3eb86ea646bdc62ef87d5aea53cc06ae, type: 3}
   BlackMaterial: {fileID: 2100000, guid: 5ee48adf52580464eb3c718327fe5622, type: 2}
   WhiteMaterial: {fileID: 2100000, guid: 11277f24f6bf2490a9dabe21d4cab55a, type: 2}
 --- !u!114 &993735894
@@ -613,4 +613,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   freeSquareMaterial: {fileID: 2100000, guid: 3455655d872df4c6fb0355fcc7b58f49, type: 2}
   enemySquareMaterial: {fileID: 2100000, guid: 7703764d91c4f49d6a7820a36a5857e6, type: 2}
-  selectorPrefab: {fileID: 8801082292146201287, guid: 5d9f9625428ff49a9affe423943c4e34, type: 3}
+  selectorPrefab: {fileID: 6367731397213339073, guid: 205e1545da099444eafa6b01867c1c22, type: 3}
