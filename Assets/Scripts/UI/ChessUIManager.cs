@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ChessUIManager : MonoBehaviour
 {
 	[SerializeField] private GameObject UIParent;
 	[SerializeField] private Button restartButton;
-	[SerializeField] private Text finishText;
+	[SerializeField] private TextMeshProUGUI finishText;
 
 	internal void HideUI()
 	{

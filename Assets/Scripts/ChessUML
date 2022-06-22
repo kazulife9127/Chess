@@ -1,0 +1,124 @@
+@startuml MR_Chess
+class BoardLayout {
+    
+}
+
+class BoardSquareSetup{
+    
+}
+enum TeamColor {
+    Black
+    White
+}
+enum PieceType {
+    Pawn
+    Bishop 
+    Knight 
+    Rook
+    Queen 
+    King
+}
+abstract class Piece{
+    
+}
+note right of Piece
+    <size:18>駒を管理する抽象クラス</size>
+end note
+
+class Bishop{
+
+}
+class King{
+    
+}
+class Queen{
+    
+}
+class Knight{
+    
+}
+class Rook{
+    
+}
+class Pawn{
+    
+}
+
+abstract class Board{
+    
+}
+
+class MaterialSetter{
+    
+}
+class PiecesCreator{
+    
+
+}
+
+abstract class ChessGameController{
+
+}
+note bottom of ChessGameController
+    <size:18>ゲーム全体を管理</size>
+end note
+
+class ChessPlayer{
+
+}
+
+class SquareSelectorCreator{
+
+}
+class BoardInputHandler{
+
+}
+interface IInputHandler{
+
+}
+class InputReciever{
+
+}
+class UIInputReciever{
+
+}
+class ColliderInputReciever{
+
+}
+interface IObjectTweener{
+
+}
+
+class ArcTweener{
+
+}
+
+
+BoardLayout  --*  BoardSquareSetup : コンポジション
+
+Bishop --|> Piece: 継承
+King --|> Piece
+Queen --|> Piece 
+Knight --|> Piece 
+Rook --|> Piece 
+Pawn --|> Piece
+
+Piece -- Board: 関連
+
+PiecesCreator --o ChessGameController: 集約
+ChessGameController -- Board: 関連
+ChessPlayer --o ChessGameController: 集約
+Board --o ChessPlayer: 集約
+SquareSelectorCreator --o Board: 集約
+BoardLayout --o ChessGameController: 集約
+MaterialSetter --o Piece: 集約
+
+Board --o BoardInputHandler: 集約
+BoardInputHandler ..> IInputHandler
+IInputHandler --o InputReciever
+UIInputReciever --|> InputReciever
+ColliderInputReciever --|> InputReciever
+
+IObjectTweener --o Piece: 集約
+ArcTweener ..> IObjectTweener
+@enduml
