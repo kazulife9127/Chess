@@ -7,10 +7,14 @@ public class SceneController : MonoBehaviour
 {
     public void ToAIMatch()
     {
-        SceneManager.LoadScene("AIMatch");
+        SceneManager.LoadScene("AIMatchScene");
     }
     public void ToHome()
     {
-        SceneManager.LoadScene("GameStart");
+        SceneManager.LoadScene("TitleScene");
+    }
+    public void ToLobby()
+    {
+        SceneManager.LoadScene("LobbyScene");
     }
 }

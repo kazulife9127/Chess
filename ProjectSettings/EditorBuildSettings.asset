@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GameStart.unity
-    guid: 75041929574fc4cd4ae68104ad83270b
+    path: Assets/Scenes/TitleScene.unity
+    guid: aeff177acc64d497d91fb4d9671ae30c
   - enabled: 1
-    path: Assets/Scenes/AIMatch.unity
+    path: Assets/Scenes/AIMatchScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/LobbyScene.unity
+    guid: f91cbc408218b4ab388e6e3510e1634e
   m_configObjects: {}
