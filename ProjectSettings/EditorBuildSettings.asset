@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LobbyScene.unity
     guid: f91cbc408218b4ab388e6e3510e1634e
+  - enabled: 1
+    path: Assets/Scenes/OnlineMatchScene.unity
+    guid: 6cb38e2adbdec462295739f9173b1349
   m_configObjects: {}

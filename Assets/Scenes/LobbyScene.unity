@@ -3479,7 +3479,7 @@ MonoBehaviour:
   placeholderText: {fileID: 1694093629}
   nameInput: {fileID: 677884227}
   startButton: {fileID: 1187386743554738079}
-  levelToPlay: 
+  levelToPlay: OnlineMatchScene
 --- !u!1 &1886191583
 GameObject:
   m_ObjectHideFlags: 0
