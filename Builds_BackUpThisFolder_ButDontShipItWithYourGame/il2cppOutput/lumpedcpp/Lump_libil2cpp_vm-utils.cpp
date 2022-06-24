@@ -1,0 +1,8 @@
+#include "il2cpp-config.h"
+#include "/Users/kazumasakasuga/Documents/Unity/2021.1.13f1/Unity.app/Contents/il2cpp/libil2cpp/vm-utils/BlobReader.cpp"
+#include "/Users/kazumasakasuga/Documents/Unity/2021.1.13f1/Unity.app/Contents/il2cpp/libil2cpp/vm-utils/Debugger.cpp"
+#include "/Users/kazumasakasuga/Documents/Unity/2021.1.13f1/Unity.app/Contents/il2cpp/libil2cpp/vm-utils/NativeDelegateMethodCache.cpp"
+#include "/Users/kazumasakasuga/Documents/Unity/2021.1.13f1/Unity.app/Contents/il2cpp/libil2cpp/vm-utils/NativeSymbol.cpp"
+#include "/Users/kazumasakasuga/Documents/Unity/2021.1.13f1/Unity.app/Contents/il2cpp/libil2cpp/vm-utils/VmStringUtils.cpp"
+#include "/Users/kazumasakasuga/Documents/Unity/2021.1.13f1/Unity.app/Contents/il2cpp/libil2cpp/vm-utils/icalls/mscorlib/System.Threading/Interlocked.cpp"
+#include "/Users/kazumasakasuga/Documents/Unity/2021.1.13f1/Unity.app/Contents/il2cpp/libil2cpp/vm-utils/icalls/mscorlib/System/Math.cpp"
