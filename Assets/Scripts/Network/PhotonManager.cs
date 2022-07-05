@@ -431,6 +431,9 @@ public class PhotonManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable{ { TEAM, team } });
         chessGameController.SetLocalPlayer((TeamColor)team);
+        chessGameController.SetLocalPlayer((TeamColor)team);
+        chessGameController.StartNewGame();
+        chessGameController.SetupCamera((TeamColor)team);
     }
     public void RestrictTeamChoice(TeamColor occupiedTeam)
     {

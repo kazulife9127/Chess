@@ -5,7 +5,7 @@ public class SceneController : MonoBehaviour
 {
     public void ToAIMatch()
     {
-        SceneManager.LoadScene("AIMatchScene");
+        SceneManager.LoadScene("SingleGameScene");
     }
     public void ToHome()
     {

@@ -847,6 +847,8 @@ struct BoardLayout_t08AB69E8A7C25CAC25CA9607348B478ADF53B041;
 struct BufferOffsetSize_tF2771CD84FA1EB3961DB41CF866EDE296987572F;
 // UnityEngine.UIElements.CallbackEventHandler
 struct CallbackEventHandler_tCEC853B0E9776DED1D671F0B7451AFBB36439A6C;
+// CameraSetup
+struct CameraSetup_t809317328B8A28914CA84E1D8918BFC385002EB6;
 // System.Threading.CancellationCallbackInfo
 struct CancellationCallbackInfo_t7FC8CF6DB4845FCB0138771E86AE058710B1117B;
 // System.Threading.CancellationTokenSource
@@ -11836,6 +11838,24 @@ public:
 };
 
 
+// GameState
+struct GameState_t220CA73AF42CC54408408696DBFFAB424F309FAE 
+{
+public:
+	// System.Int32 GameState::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(GameState_t220CA73AF42CC54408408696DBFFAB424F309FAE, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord
 struct GlyphAdjustmentRecord_tF7DD4F1F660B62990292705F25D43A7EF3ED35EA 
 {
@@ -13770,24 +13790,6 @@ public:
 
 public:
 	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(RenderRequestOutputSpace_t8EB93E4720B2D1BAB624A04ADB473C37C7F3D6A5, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-
-// ChessGameController/GameState
-struct GameState_t995EFFDEAD31897B93ECDFE736CA031D7957D9B6 
-{
-public:
-	// System.Int32 ChessGameController/GameState::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(GameState_t995EFFDEAD31897B93ECDFE736CA031D7957D9B6, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -28095,39 +28097,32 @@ struct ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77  : public M
 {
 public:
 	// BoardLayout ChessGameController::startingBoardLayout
-	BoardLayout_t08AB69E8A7C25CAC25CA9607348B478ADF53B041 * ___startingBoardLayout_4;
-	// Board ChessGameController::board
-	Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * ___board_5;
+	BoardLayout_t08AB69E8A7C25CAC25CA9607348B478ADF53B041 * ___startingBoardLayout_5;
 	// ChessUIManager ChessGameController::UIManager
 	ChessUIManager_t67EBE6AA839187765A8877A068CBD8F4FC944EBB * ___UIManager_6;
+	// CameraSetup ChessGameController::cameraSetup
+	CameraSetup_t809317328B8A28914CA84E1D8918BFC385002EB6 * ___cameraSetup_7;
+	// Board ChessGameController::board
+	Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * ___board_8;
 	// PiecesCreator ChessGameController::pieceCreator
-	PiecesCreator_tA3C32E2293E99A5BC9185B41925579AB97A18651 * ___pieceCreator_7;
+	PiecesCreator_tA3C32E2293E99A5BC9185B41925579AB97A18651 * ___pieceCreator_9;
 	// ChessPlayer ChessGameController::whitePlayer
-	ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * ___whitePlayer_8;
+	ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * ___whitePlayer_10;
 	// ChessPlayer ChessGameController::blackPlayer
-	ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * ___blackPlayer_9;
+	ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * ___blackPlayer_11;
 	// ChessPlayer ChessGameController::activePlayer
-	ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * ___activePlayer_10;
-	// ChessGameController/GameState ChessGameController::state
-	int32_t ___state_11;
+	ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * ___activePlayer_12;
+	// GameState ChessGameController::state
+	int32_t ___state_13;
 
 public:
-	inline static int32_t get_offset_of_startingBoardLayout_4() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___startingBoardLayout_4)); }
-	inline BoardLayout_t08AB69E8A7C25CAC25CA9607348B478ADF53B041 * get_startingBoardLayout_4() const { return ___startingBoardLayout_4; }
-	inline BoardLayout_t08AB69E8A7C25CAC25CA9607348B478ADF53B041 ** get_address_of_startingBoardLayout_4() { return &___startingBoardLayout_4; }
-	inline void set_startingBoardLayout_4(BoardLayout_t08AB69E8A7C25CAC25CA9607348B478ADF53B041 * value)
+	inline static int32_t get_offset_of_startingBoardLayout_5() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___startingBoardLayout_5)); }
+	inline BoardLayout_t08AB69E8A7C25CAC25CA9607348B478ADF53B041 * get_startingBoardLayout_5() const { return ___startingBoardLayout_5; }
+	inline BoardLayout_t08AB69E8A7C25CAC25CA9607348B478ADF53B041 ** get_address_of_startingBoardLayout_5() { return &___startingBoardLayout_5; }
+	inline void set_startingBoardLayout_5(BoardLayout_t08AB69E8A7C25CAC25CA9607348B478ADF53B041 * value)
 	{
-		___startingBoardLayout_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___startingBoardLayout_4), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_board_5() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___board_5)); }
-	inline Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * get_board_5() const { return ___board_5; }
-	inline Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 ** get_address_of_board_5() { return &___board_5; }
-	inline void set_board_5(Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * value)
-	{
-		___board_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___board_5), (void*)value);
+		___startingBoardLayout_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___startingBoardLayout_5), (void*)value);
 	}
 
 	inline static int32_t get_offset_of_UIManager_6() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___UIManager_6)); }
@@ -28139,48 +28134,66 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___UIManager_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_pieceCreator_7() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___pieceCreator_7)); }
-	inline PiecesCreator_tA3C32E2293E99A5BC9185B41925579AB97A18651 * get_pieceCreator_7() const { return ___pieceCreator_7; }
-	inline PiecesCreator_tA3C32E2293E99A5BC9185B41925579AB97A18651 ** get_address_of_pieceCreator_7() { return &___pieceCreator_7; }
-	inline void set_pieceCreator_7(PiecesCreator_tA3C32E2293E99A5BC9185B41925579AB97A18651 * value)
+	inline static int32_t get_offset_of_cameraSetup_7() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___cameraSetup_7)); }
+	inline CameraSetup_t809317328B8A28914CA84E1D8918BFC385002EB6 * get_cameraSetup_7() const { return ___cameraSetup_7; }
+	inline CameraSetup_t809317328B8A28914CA84E1D8918BFC385002EB6 ** get_address_of_cameraSetup_7() { return &___cameraSetup_7; }
+	inline void set_cameraSetup_7(CameraSetup_t809317328B8A28914CA84E1D8918BFC385002EB6 * value)
 	{
-		___pieceCreator_7 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___pieceCreator_7), (void*)value);
+		___cameraSetup_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___cameraSetup_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_whitePlayer_8() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___whitePlayer_8)); }
-	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * get_whitePlayer_8() const { return ___whitePlayer_8; }
-	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 ** get_address_of_whitePlayer_8() { return &___whitePlayer_8; }
-	inline void set_whitePlayer_8(ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * value)
+	inline static int32_t get_offset_of_board_8() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___board_8)); }
+	inline Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * get_board_8() const { return ___board_8; }
+	inline Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 ** get_address_of_board_8() { return &___board_8; }
+	inline void set_board_8(Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * value)
 	{
-		___whitePlayer_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___whitePlayer_8), (void*)value);
+		___board_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___board_8), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_blackPlayer_9() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___blackPlayer_9)); }
-	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * get_blackPlayer_9() const { return ___blackPlayer_9; }
-	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 ** get_address_of_blackPlayer_9() { return &___blackPlayer_9; }
-	inline void set_blackPlayer_9(ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * value)
+	inline static int32_t get_offset_of_pieceCreator_9() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___pieceCreator_9)); }
+	inline PiecesCreator_tA3C32E2293E99A5BC9185B41925579AB97A18651 * get_pieceCreator_9() const { return ___pieceCreator_9; }
+	inline PiecesCreator_tA3C32E2293E99A5BC9185B41925579AB97A18651 ** get_address_of_pieceCreator_9() { return &___pieceCreator_9; }
+	inline void set_pieceCreator_9(PiecesCreator_tA3C32E2293E99A5BC9185B41925579AB97A18651 * value)
 	{
-		___blackPlayer_9 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___blackPlayer_9), (void*)value);
+		___pieceCreator_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___pieceCreator_9), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_activePlayer_10() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___activePlayer_10)); }
-	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * get_activePlayer_10() const { return ___activePlayer_10; }
-	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 ** get_address_of_activePlayer_10() { return &___activePlayer_10; }
-	inline void set_activePlayer_10(ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * value)
+	inline static int32_t get_offset_of_whitePlayer_10() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___whitePlayer_10)); }
+	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * get_whitePlayer_10() const { return ___whitePlayer_10; }
+	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 ** get_address_of_whitePlayer_10() { return &___whitePlayer_10; }
+	inline void set_whitePlayer_10(ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * value)
 	{
-		___activePlayer_10 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___activePlayer_10), (void*)value);
+		___whitePlayer_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___whitePlayer_10), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_state_11() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___state_11)); }
-	inline int32_t get_state_11() const { return ___state_11; }
-	inline int32_t* get_address_of_state_11() { return &___state_11; }
-	inline void set_state_11(int32_t value)
+	inline static int32_t get_offset_of_blackPlayer_11() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___blackPlayer_11)); }
+	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * get_blackPlayer_11() const { return ___blackPlayer_11; }
+	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 ** get_address_of_blackPlayer_11() { return &___blackPlayer_11; }
+	inline void set_blackPlayer_11(ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * value)
 	{
-		___state_11 = value;
+		___blackPlayer_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___blackPlayer_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_activePlayer_12() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___activePlayer_12)); }
+	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * get_activePlayer_12() const { return ___activePlayer_12; }
+	inline ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 ** get_address_of_activePlayer_12() { return &___activePlayer_12; }
+	inline void set_activePlayer_12(ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * value)
+	{
+		___activePlayer_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___activePlayer_12), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_state_13() { return static_cast<int32_t>(offsetof(ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77, ___state_13)); }
+	inline int32_t get_state_13() const { return ___state_13; }
+	inline int32_t* get_address_of_state_13() { return &___state_13; }
+	inline void set_state_13(int32_t value)
+	{
+		___state_13 = value;
 	}
 };
 
@@ -48194,8 +48207,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChessGameController_RemoveMovesEnablingA
 {
 	{
 		// activePlayer.RemoveMovesEnablingAttakOnPieceOfType<T>(GetOpponentToPlayer(activePlayer), piece);
-		ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * L_0 = (ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 *)__this->get_activePlayer_10();
-		ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * L_1 = (ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 *)__this->get_activePlayer_10();
+		ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * L_0 = (ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 *)__this->get_activePlayer_12();
+		ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * L_1 = (ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 *)__this->get_activePlayer_12();
 		NullCheck((ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77 *)__this);
 		ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 * L_2;
 		L_2 = ChessGameController_GetOpponentToPlayer_m4D44144D194106E56FBFC17CBD05DF6DAB04609E((ChessGameController_t5CBED84B48D03C348F2D31CBB2B878A754D2CE77 *)__this, (ChessPlayer_tF06C1D0E8C5C122466E25132FF36A571F38114B5 *)L_1, /*hidden argument*/NULL);

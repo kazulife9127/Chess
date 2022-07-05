@@ -10,7 +10,7 @@ public class SingleplayerChessGameController : ChessGameController
             return false;
         return true;
     }
-    public override void TryToStartCurrentGame()
+    public override void TryToStartThisGame()
     {
         SetGameState(GameState.Play);
     }

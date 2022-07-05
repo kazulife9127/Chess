@@ -7,11 +7,14 @@ using Photon.Realtime;
 
 public class MultiplayerChessGameController : ChessGameController, IOnEventCallback
 {
-    //protected const byte SET_GAME_STATE_EVENT_CODE = 1;
+
     private ChessPlayer localPlayer;
     private PhotonManager photonManager;
 
-
+    public void SetNetworkManager(PhotonManager networkManager)
+	{
+		this.photonManager = networkManager;
+	}
 
     public void SetDependencies(PhotonManager photonManager)
     {
@@ -41,13 +44,13 @@ public class MultiplayerChessGameController : ChessGameController, IOnEventCallb
     {
         localPlayer = team == TeamColor.White ? whitePlayer : blackPlayer;
     }
-    public override void TryToStartCurrentGame()
-    {
-        if(photonManager.IsRoomFull())
-        {
-            SetGameState(GameState.Play);
-        }
-    }
+    // public override void TryToStartCurrentGame()
+    // {
+    //     if(photonManager.IsRoomFull())
+    //     {
+    //         SetGameState(GameState.Play);
+    //     }
+    // }
     protected override void SetGameState(GameState state)
     {
         object[] content = new object[] { (int)state };
@@ -64,4 +67,13 @@ public class MultiplayerChessGameController : ChessGameController, IOnEventCallb
             this.state = state;
         }
     }
+    public override void TryToStartThisGame()
+	{
+
+		if (photonManager.IsRoomFull())
+		{
+			SetGameState(GameState.Play);
+		}
+
+	}
 }

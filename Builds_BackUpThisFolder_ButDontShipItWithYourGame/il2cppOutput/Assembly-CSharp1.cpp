@@ -1926,10 +1926,10 @@ struct U3CU3Ec_tA0E8481A74D79D697DD1D3790081431715366D16_StaticFields
 public:
 	// ChessGameController/<>c ChessGameController/<>c::<>9
 	U3CU3Ec_tA0E8481A74D79D697DD1D3790081431715366D16 * ___U3CU3E9_0;
-	// System.Action`1<Piece> ChessGameController/<>c::<>9__24_0
-	Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * ___U3CU3E9__24_0_1;
-	// System.Action`1<Piece> ChessGameController/<>c::<>9__24_1
-	Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * ___U3CU3E9__24_1_2;
+	// System.Action`1<Piece> ChessGameController/<>c::<>9__28_0
+	Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * ___U3CU3E9__28_0_1;
+	// System.Action`1<Piece> ChessGameController/<>c::<>9__28_1
+	Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * ___U3CU3E9__28_1_2;
 
 public:
 	inline static int32_t get_offset_of_U3CU3E9_0() { return static_cast<int32_t>(offsetof(U3CU3Ec_tA0E8481A74D79D697DD1D3790081431715366D16_StaticFields, ___U3CU3E9_0)); }
@@ -1941,22 +1941,22 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E9_0), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E9__24_0_1() { return static_cast<int32_t>(offsetof(U3CU3Ec_tA0E8481A74D79D697DD1D3790081431715366D16_StaticFields, ___U3CU3E9__24_0_1)); }
-	inline Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * get_U3CU3E9__24_0_1() const { return ___U3CU3E9__24_0_1; }
-	inline Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 ** get_address_of_U3CU3E9__24_0_1() { return &___U3CU3E9__24_0_1; }
-	inline void set_U3CU3E9__24_0_1(Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * value)
+	inline static int32_t get_offset_of_U3CU3E9__28_0_1() { return static_cast<int32_t>(offsetof(U3CU3Ec_tA0E8481A74D79D697DD1D3790081431715366D16_StaticFields, ___U3CU3E9__28_0_1)); }
+	inline Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * get_U3CU3E9__28_0_1() const { return ___U3CU3E9__28_0_1; }
+	inline Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 ** get_address_of_U3CU3E9__28_0_1() { return &___U3CU3E9__28_0_1; }
+	inline void set_U3CU3E9__28_0_1(Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * value)
 	{
-		___U3CU3E9__24_0_1 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E9__24_0_1), (void*)value);
+		___U3CU3E9__28_0_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E9__28_0_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E9__24_1_2() { return static_cast<int32_t>(offsetof(U3CU3Ec_tA0E8481A74D79D697DD1D3790081431715366D16_StaticFields, ___U3CU3E9__24_1_2)); }
-	inline Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * get_U3CU3E9__24_1_2() const { return ___U3CU3E9__24_1_2; }
-	inline Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 ** get_address_of_U3CU3E9__24_1_2() { return &___U3CU3E9__24_1_2; }
-	inline void set_U3CU3E9__24_1_2(Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * value)
+	inline static int32_t get_offset_of_U3CU3E9__28_1_2() { return static_cast<int32_t>(offsetof(U3CU3Ec_tA0E8481A74D79D697DD1D3790081431715366D16_StaticFields, ___U3CU3E9__28_1_2)); }
+	inline Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * get_U3CU3E9__28_1_2() const { return ___U3CU3E9__28_1_2; }
+	inline Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 ** get_address_of_U3CU3E9__28_1_2() { return &___U3CU3E9__28_1_2; }
+	inline void set_U3CU3E9__28_1_2(Action_1_tE26CF9C9C322016B8C12F929442CE75133359497 * value)
 	{
-		___U3CU3E9__24_1_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E9__24_1_2), (void*)value);
+		___U3CU3E9__28_1_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E9__28_1_2), (void*)value);
 	}
 };
 
@@ -6631,24 +6631,6 @@ public:
 
 public:
 	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(CameraModes_t86C030D336478B1715780ECE7AB12A629AD0ACE0, ___value___2)); }
-	inline int32_t get_value___2() const { return ___value___2; }
-	inline int32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(int32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
-
-// ChessGameController/GameState
-struct GameState_t995EFFDEAD31897B93ECDFE736CA031D7957D9B6 
-{
-public:
-	// System.Int32 ChessGameController/GameState::value__
-	int32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(GameState_t995EFFDEAD31897B93ECDFE736CA031D7957D9B6, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -23607,8 +23589,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mD5EE614A3943B19E8ED0E602E
 		return;
 	}
 }
-// System.Void ChessGameController/<>c::<DestroyPieces>b__24_0(Piece)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CDestroyPiecesU3Eb__24_0_mF24137D5D5D09DD51B1F76BF1941C9A418C7D4B6 (U3CU3Ec_tA0E8481A74D79D697DD1D3790081431715366D16 * __this, Piece_tBB694F50405042E44F45E94D75887A6B91292BF1 * ___p0, const RuntimeMethod* method)
+// System.Void ChessGameController/<>c::<DestroyPieces>b__28_0(Piece)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CDestroyPiecesU3Eb__28_0_m67224203E5EC75042CB61BE307F54567709F16FF (U3CU3Ec_tA0E8481A74D79D697DD1D3790081431715366D16 * __this, Piece_tBB694F50405042E44F45E94D75887A6B91292BF1 * ___p0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -23627,8 +23609,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CDestroyPiecesU3Eb__24_0_mF241
 		return;
 	}
 }
-// System.Void ChessGameController/<>c::<DestroyPieces>b__24_1(Piece)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CDestroyPiecesU3Eb__24_1_m92C2F853547946020FE8A7AE23AEB6A981ED5352 (U3CU3Ec_tA0E8481A74D79D697DD1D3790081431715366D16 * __this, Piece_tBB694F50405042E44F45E94D75887A6B91292BF1 * ___p0, const RuntimeMethod* method)
+// System.Void ChessGameController/<>c::<DestroyPieces>b__28_1(Piece)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CDestroyPiecesU3Eb__28_1_mAC12F6613B35DBAADC78130BE956D24A5B42DFA2 (U3CU3Ec_tA0E8481A74D79D697DD1D3790081431715366D16 * __this, Piece_tBB694F50405042E44F45E94D75887A6B91292BF1 * ___p0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -23647,14 +23629,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CDestroyPiecesU3Eb__24_1_m92C2
 		return;
 	}
 }
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -61,12 +61,14 @@
 		<type fullname="Bishop" preserve="nothing"/>
 		<type fullname="BoardInputHandler" preserve="nothing"/>
 		<type fullname="BoardLayout" preserve="nothing"/>
-		<type fullname="ChessGameController" preserve="nothing"/>
+		<type fullname="CameraSetup" preserve="nothing"/>
 		<type fullname="ChessUIManager" preserve="nothing"/>
 		<type fullname="ColliderInputReciever" preserve="nothing"/>
 		<type fullname="King" preserve="nothing"/>
 		<type fullname="Knight" preserve="nothing"/>
 		<type fullname="MaterialSetter" preserve="nothing"/>
+		<type fullname="MultiplayerBoard" preserve="nothing"/>
+		<type fullname="MultiplayerChessGameController" preserve="nothing"/>
 		<type fullname="Pawn" preserve="nothing"/>
 		<type fullname="PhotonManager" preserve="nothing"/>
 		<type fullname="PiecesCreator" preserve="nothing"/>
@@ -75,6 +77,7 @@
 		<type fullname="Room" preserve="nothing"/>
 		<type fullname="SceneController" preserve="nothing"/>
 		<type fullname="SingleplayerBoard" preserve="nothing"/>
+		<type fullname="SingleplayerChessGameController" preserve="nothing"/>
 		<type fullname="SquareSelectorCreator" preserve="nothing"/>
 		<type fullname="UIButton" preserve="nothing"/>
 		<type fullname="UIInputReciever" preserve="nothing"/>

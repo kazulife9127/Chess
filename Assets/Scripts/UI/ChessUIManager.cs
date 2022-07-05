@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
-public abstract class ChessUIManager : MonoBehaviour
+public class ChessUIManager : MonoBehaviour
 {
 	[SerializeField] private GameObject UIParent;
 	[SerializeField] private Button restartButton;
