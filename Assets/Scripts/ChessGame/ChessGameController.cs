@@ -5,9 +5,11 @@ using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(PiecesCreator))]
-public class ChessGameController : MonoBehaviour
+public abstract class ChessGameController : MonoBehaviour
 {
-    private enum GameState
+    protected const byte SET_GAME_STATE_EVENT_CODE = 1;
+
+    public enum GameState
     {
         Init, Play, Finished
     }
@@ -17,11 +19,14 @@ public class ChessGameController : MonoBehaviour
     [SerializeField] private ChessUIManager UIManager;
 
     private PiecesCreator pieceCreator;
-    private ChessPlayer whitePlayer;
-    private ChessPlayer blackPlayer;
-    private ChessPlayer activePlayer;
+    protected ChessPlayer whitePlayer;
+    protected ChessPlayer blackPlayer;
+    protected ChessPlayer activePlayer;
+    protected  GameState state;
 
-    private GameState state;
+    protected abstract void SetGameState(GameState state);
+    public abstract void TryToStartCurrentGame();
+    public abstract bool CanPerformMove();
 
     private void Awake()
     {
@@ -53,11 +58,7 @@ public class ChessGameController : MonoBehaviour
         CreatePiecesFromLayout(startingBoardLayout);
         activePlayer = whitePlayer;
         GenerateAllPossiblePlayerMoves(activePlayer);
-        SetGameState(GameState.Play);
-    }
-    private void SetGameState(GameState state)
-    {
-        this.state = state;
+        TryToStartCurrentGame();
     }
 
     internal bool IsGameInProgress()

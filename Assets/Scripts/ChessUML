@@ -1,100 +1,150 @@
 @startuml MR_Chess
+title MR_Chessのクラス図
+
+package Enum{
+    enum TeamColor {
+    Black
+    White
+    }
+    enum PieceType {
+        Pawn
+        Bishop 
+        Knight 
+        Rook
+        Queen 
+        King
+    }
+}
+
+package Unit{
+    class Bishop{
+
+    class King{
+        
+    }
+    class Queen{
+        
+    }
+    class Knight{
+        
+    }
+    class Rook{
+        
+    }
+    class Pawn{
+        
+    }
+}
+
+package ChessGame{
 class BoardLayout {
     
 }
-
 class BoardSquareSetup{
     
-}
-enum TeamColor {
-    Black
-    White
-}
-enum PieceType {
-    Pawn
-    Bishop 
-    Knight 
-    Rook
-    Queen 
-    King
 }
 abstract class Piece{
     
 }
-note right of Piece
-    <size:18>駒を管理する抽象クラス</size>
-end note
-
-class Bishop{
-
-}
-class King{
-    
-}
-class Queen{
-    
-}
-class Knight{
-    
-}
-class Rook{
-    
-}
-class Pawn{
-    
-}
-
 abstract class Board{
     
 }
-
 class MaterialSetter{
     
 }
 class PiecesCreator{
     
-
 }
-
 abstract class ChessGameController{
 
 }
-note bottom of ChessGameController
-    <size:18>ゲーム全体を管理</size>
-end note
-
 class ChessPlayer{
 
 }
-
 class SquareSelectorCreator{
 
 }
+}
+
+package InputSystem{
 class BoardInputHandler{
 
 }
 interface IInputHandler{
 
 }
-class InputReciever{
+abstract class InputReciever{
+
+}
+
+class ColliderInputReciever{
+
+}
+}
+
+
+package GameMode{
+   package SingleGameMode{
+    class SingleplayerBoard{
+
+    }
+    class SingleplayerChessGameController{
+
+    }
+    class SingleUIManager{
+        
+    }
+}
+package MultiGameMode{
+    
+    class MultiplayerBoard{
+
+    }
+    class MultiplayerChessGameContoller{
+
+    }
+    package Network{
+    class PhotonManager{
+
+    }
+    class Room{
+
+    }
+}
+} 
+}
+
+
+
+
+package Tweener{
+interface IObjectTweener{
+
+}
+class ArcTweener{
+
+}
+}
+package UI{
+abstract class ChessUImanager{
 
 }
 class UIInputReciever{
 
 }
-class ColliderInputReciever{
+class UIButton{
+    
+}
+class UIInputHandler{
 
 }
-interface IObjectTweener{
+}
+
+class SceneController{
 
 }
 
-class ArcTweener{
-
-}
-
-
-BoardLayout  --*  BoardSquareSetup : コンポジション
+BoardLayout --*  BoardSquareSetup : コンポジション
 
 Bishop --|> Piece: 継承
 King --|> Piece
@@ -106,19 +156,36 @@ Pawn --|> Piece
 Piece -- Board: 関連
 
 PiecesCreator --o ChessGameController: 集約
+
 ChessGameController -- Board: 関連
+MultiplayerChessGameContoller --o ChessGameController: 集約
+SingleplayerChessGameController --o ChessGameController: 集約
 ChessPlayer --o ChessGameController: 集約
+
 Board --o ChessPlayer: 集約
 SquareSelectorCreator --o Board: 集約
+
 BoardLayout --o ChessGameController: 集約
+
 MaterialSetter --o Piece: 集約
 
 Board --o BoardInputHandler: 集約
-BoardInputHandler ..> IInputHandler
-IInputHandler --o InputReciever
-UIInputReciever --|> InputReciever
-ColliderInputReciever --|> InputReciever
+SingleplayerBoard --|> Board: 継承
+MultiplayerBoard --|> Board: 継承
+
+BoardInputHandler ..> IInputHandler: 依存
+
+SingleUIManager --o ChessUImanager: 集約
+MultiUIManager --o ChessUImanager: 集約
+IInputHandler --o InputReciever: 集約
+UIInputReciever --|> InputReciever: 継承
+UIButton --|> InputReciever: 継承
+UIInputHandler --|> IInputHandler: 継承
+MultiGameMode -- Network
+ColliderInputReciever --|> InputReciever: 継承
 
 IObjectTweener --o Piece: 集約
-ArcTweener ..> IObjectTweener
+ArcTweener ..> IObjectTweener: 依存
+
+
 @enduml

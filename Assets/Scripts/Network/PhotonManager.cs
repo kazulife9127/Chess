@@ -7,40 +7,57 @@ using UnityEngine.SceneManagement;
 
 public class PhotonManager : MonoBehaviourPunCallbacks
 {
+    [Header("Loading")]
     public static PhotonManager instance;
     public GameObject loadingPanel;
     public Text loadingText;
     public GameObject buttons;
 
+   [Header("CreateRoom")]
     public GameObject createRoomPanel;
     public Text enterRoomName;
 
+   [Header("RoomName")]
     public GameObject roomPanel;
     public Text roomName;
 
+   [Header("Error")]
     public GameObject errorPanel;
     public Text errorText;
 
+   [Header("RoomList")]
     public GameObject roomListPanel;
-
     public Room originalRoomButton;
     public GameObject roomButtonContent;
 
     Dictionary<string,RoomInfo> roomsList = new Dictionary<string,RoomInfo>();
     private List<Room> allRoomButtons = new List<Room>();
 
+   [Header("PlayerName")]
     public Text playerNameText;
     private List<Text> allPlayerNames = new List<Text>();
     public GameObject playerNameContent;
 
+   [Header("NameInput")]
     public GameObject nameInputPanel;
     public Text placeholderText;
     public InputField nameInput;
     private bool setName;
 
+   [Header("StartButton")]
     public GameObject startButton;
 
+   [Header("Scene")]
     public string levelToPlay;
+
+    [Header("TeamSelection")]
+    [SerializeField] private GameObject TeamSelectionPanel;
+	[SerializeField] private Button blackButton;
+	[SerializeField] private Button whiteButton;
+    private const string TEAM = "team";
+
+    private MultiplayerChessGameController chessGameController;
+
 
     // Start is called before the first frame update
     private void Start()
@@ -58,6 +75,10 @@ public class PhotonManager : MonoBehaviourPunCallbacks
         }
     }
 
+    public void SetDependencies(MultiplayerChessGameController chessGameController)
+    {
+        this.chessGameController = chessGameController;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -376,6 +397,9 @@ public class PhotonManager : MonoBehaviourPunCallbacks
     public void PlayGame()
     {
         PhotonNetwork.LoadLevel(levelToPlay);
+
+        PrepareTeamSelectionoptions();
+        ShowTeamSelectionPanel();
     }
 
     // 遷移とネットワーク切断
@@ -383,5 +407,39 @@ public class PhotonManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.Disconnect();
         SceneManager.LoadScene("TitleScene");
+    }
+
+    // チーム選択
+
+    private void PrepareTeamSelectionoptions()
+    {
+        if(PhotonNetwork.CurrentRoom.PlayerCount > 1)
+        {
+            var firstPlayer = PhotonNetwork.CurrentRoom.GetPlayer(1);
+            if(firstPlayer.CustomProperties.ContainsKey(TEAM))
+            {
+                var occupiedTeam = firstPlayer.CustomProperties[TEAM];
+                RestrictTeamChoice((TeamColor)occupiedTeam);
+            }
+        }
+    }
+    public void ShowTeamSelectionPanel()
+    {
+        TeamSelectionPanel.SetActive(true);
+    }
+    public void SelectTeam(int team)
+    {
+        PhotonNetwork.LocalPlayer.SetCustomProperties(new ExitGames.Client.Photon.Hashtable{ { TEAM, team } });
+        chessGameController.SetLocalPlayer((TeamColor)team);
+    }
+    public void RestrictTeamChoice(TeamColor occupiedTeam)
+    {
+        var buttonToDeactive = occupiedTeam == TeamColor.White ? whiteButton : blackButton;
+        buttonToDeactive.interactable = false;
+    }
+
+    public bool IsRoomFull()
+    {
+        return PhotonNetwork.CurrentRoom.PlayerCount == PhotonNetwork.CurrentRoom.MaxPlayers;
     }
 }

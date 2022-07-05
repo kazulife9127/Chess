@@ -59,7 +59,6 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ArcTweener" preserve="nothing"/>
 		<type fullname="Bishop" preserve="nothing"/>
-		<type fullname="Board" preserve="nothing"/>
 		<type fullname="BoardInputHandler" preserve="nothing"/>
 		<type fullname="BoardLayout" preserve="nothing"/>
 		<type fullname="ChessGameController" preserve="nothing"/>
@@ -75,6 +74,7 @@
 		<type fullname="Rook" preserve="nothing"/>
 		<type fullname="Room" preserve="nothing"/>
 		<type fullname="SceneController" preserve="nothing"/>
+		<type fullname="SingleplayerBoard" preserve="nothing"/>
 		<type fullname="SquareSelectorCreator" preserve="nothing"/>
 		<type fullname="UIButton" preserve="nothing"/>
 		<type fullname="UIInputReciever" preserve="nothing"/>

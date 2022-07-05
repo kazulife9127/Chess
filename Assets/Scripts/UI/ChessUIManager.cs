@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ChessUIManager : MonoBehaviour
+public abstract class ChessUIManager : MonoBehaviour
 {
 	[SerializeField] private GameObject UIParent;
 	[SerializeField] private Button restartButton;

@@ -1,0 +1,29 @@
+@startuml
+/' define participants '/
+actor ユーザー
+boundary ゲームタイプ選択
+boundary 検索ビュー
+boundary 検索結果画面
+entity 記事検索
+entity 記事一覧
+
+/' messages '/
+ユーザー -> ホーム画面 : access
+create 検索ビュー
+ホーム画面 -> 検索ビュー : display
+
+ユーザー -> 検索ビュー : input keyword
+
+検索ビュー -> 検索ビュー : validateKeyword
+検索ビュー -> 記事検索 : search(keyword)
+記事検索 -> 記事一覧 : new
+記事検索 --> 検索ビュー : 記事一覧
+
+create 検索結果画面
+
+alt exists 記事一覧
+    検索ビュー  -> 検索結果画面 : display
+else
+    検索ビュー -> ホーム画面 : display with message
+end
+@enduml
