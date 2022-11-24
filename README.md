@@ -35,10 +35,9 @@
 https://user-images.githubusercontent.com/81737817/203801514-1a5d7ed7-028a-4dbf-8252-cb62f89896d3.mov
 
 ## 手順④
-### チェックメイトになったら「Restart」ボタンが表示されます
-
+### チェックメイトになったら「Re
+start」ボタンが表示されます
+![スクリーンショット 2022-11-25 0 22 46](https://user-images.githubusercontent.com/81737817/203822431-c4feb4bd-628b-4290-a275-61507fa2f34f.png)
 
 46](https://user-images.githubusercontent.com/81737817/203819275-225f4334-d971-45d5-958a-963cd11c2894.png)
 
-
-[rules_of_chess.pdf](https://github.com/kazulife9127/Chess/files/10085864/rules_of_chess.pdf)
