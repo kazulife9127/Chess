@@ -20,8 +20,11 @@
 - 取れる駒があれば赤く表示される
 - 自滅はできない(自ら駒を取られる場所には移動させられない)
 
-
 https://user-images.githubusercontent.com/81737817/203801514-1a5d7ed7-028a-4dbf-8252-cb62f89896d3.mov
 
+## 手順④
+### チェックメイトになったら「Restart」ボタンが表示されます
+
+![スクリーンショット 2022-11-25 0 22 46](https://user-images.githubusercontent.com/81737817/203819275-225f4334-d971-45d5-958a-963cd11c2894.png)
 
 
