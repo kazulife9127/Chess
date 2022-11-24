@@ -27,6 +27,7 @@
 
 ## 手順③
 ### その後は交互に手を打っていきます
+#### ルール・説明
 - 駒の移動可能箇所が黄色で表示される
 - 取れる駒があれば赤く表示される
 - 自滅はできない(自分のキングを相手に取られる場所には移動させられない)
@@ -36,6 +37,7 @@ https://user-images.githubusercontent.com/81737817/203801514-1a5d7ed7-028a-4dbf-
 ## 手順④
 ### チェックメイトになったら「Restart」ボタンが表示されます
 
-![スクリーンショット 2022-11-25 0 22 46](https://user-images.githubusercontent.com/81737817/203819275-225f4334-d971-45d5-958a-963cd11c2894.png)
+![スクリーンショット 2022-11-25 0 22 [rules_of_chess.pdf](https://github.com/kazulife9127/Chess/files/10085857/rules_of_chess.pdf)
+46](https://user-images.githubusercontent.com/81737817/203819275-225f4334-d971-45d5-958a-963cd11c2894.png)
 
 
