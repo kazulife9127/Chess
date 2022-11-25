@@ -10,8 +10,8 @@
   - Mac
 - ゲームエンジン
   - Unity 2021.3.7f1
-- ネットワーク
-  - Photon2
+- 通信
+  - Photon.Pun2
 - 言語
   - C#
 
